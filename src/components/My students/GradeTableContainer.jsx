@@ -1,9 +1,10 @@
 import {connect} from "react-redux";
+import GradeTable from "../GradeTable";
 
-let TableContainer = (props) =>{
+let GradeTableContainer = (props) =>{
     return(
-        <table
+        <GradeTable/>
     )
 }
 
-export default connect()(TableContainer)
+export default connect()(GradeTableContainer)

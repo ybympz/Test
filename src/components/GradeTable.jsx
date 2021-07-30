@@ -1,8 +1,11 @@
-let Table = (props) =>{
-    return (
-        <table ClassName="table table-bordered table-hover">
+import "./GrabeTable.scss"
+
+let GradeTable = (props) =>{
+    return(
+        <div className="table_wrapper">
+        <table className="table table-bordered table-hover">
             <thead>
-            <tr>
+            <tr className="table-primary">
                 <th>№</th>
                 <th>Название урока</th>
                 <th>Упражнений в уроке</th>
@@ -13,6 +16,21 @@ let Table = (props) =>{
                 <th>Заработано террикоинов</th>
             </tr>
             </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Mark</td>
+            </tr>
+            </tbody>
         </table>
+        </div>
     )
 }
+
+export default GradeTable
