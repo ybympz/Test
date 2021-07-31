@@ -89,7 +89,7 @@ export const Sidebar = ({ toggleOpen, sidebarIsOpen }) => {
               <li className="Sidebar__navigation-item item--wrapper item--premium">
                 {/*<img*/}
                 {/*  className="Sidebar__icon margin--no"*/}
-                {/*  src={require("../AppHeader/assets/premium.svg").default}*/}
+                {/*  src2={require("../AppHeader/assets/premium.svg").default}*/}
                 {/*  alt="premium"*/}
                 {/*/>*/}
                 <p className="Sidebar__navigation-title item--text text--premium">

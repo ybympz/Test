@@ -1,4 +1,4 @@
-button-add {
+.button-add {
   display: grid;
   grid-template-columns: max-content max-content;
   grid-gap: 5px;
@@ -10,8 +10,9 @@ button-add {
   border: 2px solid #235390;
   box-sizing: border-box;
   border-radius: 10px;
+}
 
-  &__title {
+.button-add title {
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
@@ -21,10 +22,4 @@ button-add {
     align-items: center;
     text-align: center;
     color: #235390;
-  }
-
-  &:hover {
-    position: relative;
-    bottom: 5px;
-  }
 }

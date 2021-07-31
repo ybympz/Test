@@ -1,6 +1,7 @@
 import "./GrabeTable.scss"
 
 let GradeTable = (props) =>{
+    console.log(props)
     return(
         <div className="table_wrapper">
         <table className="table table-bordered table-hover">
@@ -17,16 +18,18 @@ let GradeTable = (props) =>{
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>Mark</td>
-            </tr>
+            {props.pupils[props.currentStudent].lessons.map((lessons) =>(
+                <tr>
+                    <th scope="row">{lessons.id}</th>
+                    <td>{lessons.name}</td>
+                    <td>{lessons.count}</td>
+                    <td>{lessons.countTrue}</td>
+                    <td>{lessons.mistake}</td>
+                    <td>{lessons.inaccuracy}</td>
+                    <td>{lessons.time}</td>
+                    <td>{lessons.coins}</td>
+                </tr>
+            ))}
             </tbody>
         </table>
         </div>

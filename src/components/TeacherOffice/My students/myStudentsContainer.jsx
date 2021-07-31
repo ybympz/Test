@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from "react-redux";
-import {addPupilsChange} from "../../redux/reducer-TeacherPage";
+import {addPupilsChange} from "../../../redux/reducer-TeacherPage";
 import MyStudents from "./myStudents";
 
 
@@ -10,10 +10,10 @@ let MyStudentsContainer = (props) => {
     )
 }
 
-let mapStateToProps = (state) => {
+let mapStateToProps = (store) => {
     return {
-        pupils: state.TeacherPage.pupils,
-        addPupilsInProgress: state.TeacherPage.addPupilsInProgress
+        pupils: store.TeacherPage.pupils,
+        addPupilsInProgress: store.TeacherPage.addPupilsInProgress
     }
 }
 
